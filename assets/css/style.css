@@ -1,7 +1,8 @@
-body {
+main {
     background-color: rgb(255, 212, 219);
     font-family: "Roboto", sans-serif;
 }
+
 
 .container-encabezado {
     display: flex;
@@ -9,6 +10,11 @@ body {
     align-items: center;
     background-color: black;
     height: 200px;
+}
+
+#descripcion-ecommerce {
+    font-size: 24px;
+    padding: 20px;
 }
 
 .section-contenedor-productos {
@@ -41,8 +47,6 @@ body {
     gap: 20px;
     padding: 20px;
 }
-
-
 
 .container-foto-logo {
     width: 200px;
@@ -77,21 +81,16 @@ body {
     height: 50px;
 }
 
-.promos-title {
-    font-size: 36px;
-}
-
-#title-header {
-    font-size: 48px;
-}
-
-#title-section{
+#promos-title {
     display: flex;
     justify-content: center;
 }
 
-.info-promos {
-    font-size: 24px;
+
+#title-section {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
 }
 
 .nav-list {
@@ -113,6 +112,32 @@ body {
     border: 1px solid white;
 }
 
+.section-contenedor-promos div div {
+    gap: 20px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.section-contenedor-promos div div div {
+    border: 1px solid;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.section-contenedor-promos div div div:hover {
+    background-color: lightpink;
+    color: white;
+    border: 1px solid black;
+}
+
+#container-contacto{
+    text-align: center;
+}
+
+#container-ayuda{
+    text-align: center;
+}
+
 @media (max-width:980px) {
 
     .grilla-productos {
@@ -124,7 +149,7 @@ body {
     }
 
     .container-foto-cart {
-        display: none
+        display: none;
     }
 
     .container-foto-menu-hamb {
