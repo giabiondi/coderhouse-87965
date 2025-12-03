@@ -1,8 +1,9 @@
-@use "../base/variables";
+@use "sass:map";
+@use "../utilities/maps" as mapa;
+@use "../utilities/extend";
 
 header h1 {
-    display: flex;
-    justify-content: center;
+    @extend .flex-center;
 }
 
 #foto-logo {
@@ -20,7 +21,7 @@ header h1 {
     gap: 20px;
 
     .nav-link:hover {
-        background-color: variables.$color-primario;
+        background-color: map.get(mapa.$colores, color-primario);
     }
 }
 

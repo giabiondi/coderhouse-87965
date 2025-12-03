@@ -1,4 +1,6 @@
-@use "../base/variables";
+@use "sass:map";
+@use "../utilities/maps" as mapa;
+@use "../utilities/extend";
 
 .section-contenedor-productos {
     margin: 20px;
@@ -10,17 +12,16 @@
         padding: 20px;
 
         div {
-            background-color: white;
+            background-color: map.get(mapa.$colores, color-secundario);
             padding: 20px;
             border-radius: 12px;
             border: 1px solid;
-            display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            @extend .flex-center;
 
             &:hover {
-                background-color: variables.$color-primario;
+                background-color: map.get(mapa.$colores, color-primario);
             }
 
             img {

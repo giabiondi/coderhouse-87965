@@ -1,12 +1,13 @@
-@use "../base/variables";
+@use "sass:map";
+@use "../utilities/maps" as mapa;
+@use "../utilities/extend";
 
 main {
-    background-color: variables.$color-primario;
+    background-color: map.get(mapa.$colores, color-primario);
     font-family: "Roboto", sans-serif;
 
     h2 {
-        display: flex;
-        justify-content: center;
+        @extend .flex-center;
         padding: 15px;
     }
 }

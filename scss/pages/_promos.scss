@@ -1,4 +1,5 @@
-@use "../base/variables";
+@use "sass:map";
+@use "../utilities/maps" as mapa;
 
 .section-contenedor-promos div div {
     gap: 20px;
@@ -11,8 +12,8 @@
         background-color: white;
 
         &:hover {
-            background-color: variables.$color-primario;
-            border: 1px solid black;
+            background-color: map.get(mapa.$colores, color-primario);
+            border: 1px solid map.get(mapa.$colores, color-terciario);
         }
     }
 }
