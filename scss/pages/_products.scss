@@ -1,0 +1,33 @@
+@use "../base/variables";
+
+.section-contenedor-productos {
+    margin: 20px;
+
+    div{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+
+        div {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                background-color: variables.$color-primario;
+            }
+
+            img {
+                width: 200px;
+            }
+        }
+    }
+
+
+}

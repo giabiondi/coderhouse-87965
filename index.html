@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>golosinas.g</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -13,31 +13,32 @@
 <body>
     <!--Encabezado y barra de navegación-->
     <header>
-        <div class="container-encabezado">
-            <div class="container-foto-logo">
-                <img src="./assets/img/logo.png" id="foto-logo">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand"><img src="./assets/img/logo.png" id="foto-logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="./pages/productos.html">Productos</a>
+                        <a class="nav-link" href="./pages/promociones.html">Promociones</a>
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        <a class="nav-link" href="./pages/ayuda.html">Ayuda</a>
+                        <a class="nav-link"><img src="./assets/img/cart.png" id="foto-cart"></a>
+                    </div>
+                </div>
             </div>
-            <nav class="navbar">
-                <ul class="nav-list">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="./pages/productos.html">Productos</a></li>
-                    <li><a href="./pages/promociones.html">Promociones</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                    <li><a href="./pages/ayuda.html">Ayuda</a></li>
-                </ul>
-            </nav>
-            <div class="container-foto-cart">
-                <img src="./assets/img/cart.png" id="foto-cart">
-            </div>
-            <div class="container-foto-menu-hamb">
-                <img src="./assets/img/menu_hamb.png" id="foto-menu-hamb">
-            </div>
-        </div>
-        <h1 id="slogan-ecommerce">Desde lo dulce a tu corazón</h1>
+        </nav>
+        <h1>Desde lo dulce a tu corazón</h1>
     </header>
     <!--Descripción ecommerce-->
     <main>
-        <h2 id="descripcion-ecommerce">En Golosinas.g creemos que la vida es más dulce cuando se comparte. Somos un
+        <h2>¿Quiénes somos?</h2>
+        <p id="descripcion-ecommerce">En Golosinas.g creemos que la vida es más dulce cuando se comparte. Somos un
             ecommerce dedicado a ofrecerte
             las mejores golosinas, chocolates, snacks y productos dulces que tanto te gustan, en un solo lugar. Nacimos
             con la idea de acercarte la magia de las golosinas de siempre y las nuevas tendencias del mundo dulce,
@@ -47,7 +48,7 @@
             disfrute, por eso cuidamos cada detalle: desde la selección de productos, el empaquetado, hasta la entrega
             en tu puerta.<br>
             En Golosinas.g queremos que comprar tus golosinas favoritas sea una experiencia simple, rápida y divertida.
-            Ya sea para un regalo, una fiesta o para darte un gusto, estamos acá para endulzar tus días. </h2>
+            Ya sea para un regalo, una fiesta o para darte un gusto, estamos acá para endulzar tus días. </p>
     </main>
     <footer>
         <p>Todos los derechos reservados</p>

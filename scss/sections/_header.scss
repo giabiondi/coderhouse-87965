@@ -1,0 +1,27 @@
+@use "../base/variables";
+
+header h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#foto-logo {
+    width: 150px;
+}
+
+#foto-cart {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: end;
+    gap: 20px;
+
+    .nav-link:hover {
+        background-color: variables.$color-primario;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */

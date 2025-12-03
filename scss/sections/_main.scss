@@ -1,0 +1,27 @@
+@use "../base/variables";
+
+main {
+    background-color: variables.$color-primario;
+    font-family: "Roboto", sans-serif;
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+}
+
+
+#descripcion-ecommerce {
+    font-size: 24px;
+    padding: 20px;
+}
+
+
+#container-contacto {
+    text-align: center;
+}
+
+#container-ayuda {
+    text-align: center;
+}
