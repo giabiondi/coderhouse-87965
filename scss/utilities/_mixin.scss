@@ -1,0 +1,7 @@
+@mixin section-variables($a, $b, $c, $d, $e) {
+    padding: $a;
+    border-radius: $b;
+    border: $c;
+    flex-direction: $d;
+    align-items: $e;
+}

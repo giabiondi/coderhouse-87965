@@ -1,6 +1,7 @@
 @use "sass:map";
 @use "../utilities/maps" as mapa;
 @use "../utilities/extend";
+@use "../utilities/mixin";
 
 .section-contenedor-productos {
     margin: 20px;
@@ -13,11 +14,7 @@
 
         div {
             background-color: map.get(mapa.$colores, color-secundario);
-            padding: 20px;
-            border-radius: 12px;
-            border: 1px solid;
-            flex-direction: column;
-            align-items: center;
+            @include mixin.section-variables(20px, 12px, 1px solid, column, center);
             @extend .flex-center;
 
             &:hover {
