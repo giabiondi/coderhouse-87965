@@ -12,8 +12,8 @@
         background-color: white;
 
         &:hover {
-            background-color: map.get(mapa.$colores, color-primario);
-            border: 1px solid map.get(mapa.$colores, color-terciario);
+            background: linear-gradient(map.get(mapa.$colores, color-secundario), map.get(mapa.$colores, color-primario));
+            border: 1px solid map.get(mapa.$colores, color-cuarto);
         }
     }
 }

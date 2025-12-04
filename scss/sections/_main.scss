@@ -2,8 +2,8 @@
 @use "../utilities/maps" as mapa;
 @use "../utilities/extend";
 
-main {
-    background-color: map.get(mapa.$colores, color-primario);
+body {
+    background: linear-gradient(map.get(mapa.$colores, color-secundario) 25%, map.get(mapa.$colores, color-primario) 75%);
     font-family: "Roboto", sans-serif;
 
     h2 {
@@ -11,7 +11,6 @@ main {
         padding: 15px;
     }
 }
-
 
 #descripcion-ecommerce {
     font-size: 24px;

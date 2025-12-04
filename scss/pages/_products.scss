@@ -21,7 +21,7 @@
             @extend .flex-center;
 
             &:hover {
-                background-color: map.get(mapa.$colores, color-primario);
+                background: linear-gradient(map.get(mapa.$colores, color-secundario), map.get(mapa.$colores, color-primario));
             }
 
             img {
@@ -29,6 +29,5 @@
             }
         }
     }
-
 
 }

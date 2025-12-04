@@ -8,6 +8,12 @@ header h1 {
 
 #foto-logo {
     width: 150px;
+    transition: 2s;
+
+    &:hover {
+        transform: scale(1.4);
+        transition: 2s;
+    }
 }
 
 #foto-cart {
