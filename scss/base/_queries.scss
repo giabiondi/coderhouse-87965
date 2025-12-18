@@ -1,14 +1,30 @@
 @media (max-width: 980px) {
-  .section-contenedor-productos .grilla-productos{
+  .section-contenedor-productos .grilla-productos {
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
   }
-  .section-contenedor-productos .grilla-productos div img {
-    width: 150px;
-  } 
+
+
+  #descripcion-ecommerce {
+    font-size: 16px;
+    padding: 0px 50px;
+  }
+
+#carouselMarcas {
+    div div div img {
+        margin: 0 10px;
+    }
+}
+
 }
 
 @media (max-width: 480px) {
-  .section-contenedor-productos .grilla-productos{
+  .section-contenedor-productos .grilla-productos {
     grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
   }
-} 
+
+    .section-contenedor-productos .grilla-productos div img {
+    width: 75px;
+  }
+}

@@ -4,11 +4,11 @@
 @use "../utilities/mixin";
 
 .section-contenedor-productos {
-    margin: 20px;
+    margin: 0 200px;
 
     div{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
         padding: 20px;
 
@@ -21,9 +21,6 @@
                 background: linear-gradient(map.get(mapa.$colores, color-secundario), map.get(mapa.$colores, color-primario));
             }
 
-            img {
-                width: 200px;
-            }
         }
     }
 
