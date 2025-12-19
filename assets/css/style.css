@@ -1,4 +1,4 @@
-.flex-center, .section-contenedor-productos div div, body h2, header h1 {
+.flex-center, .section-contenedor-promociones div div, .section-contenedor-productos div div, body h2, header h1 {
   display: flex;
   justify-content: center;
 }
@@ -30,9 +30,10 @@
 body {
   background: linear-gradient(white 25%, rgb(255, 212, 219) 75%);
   font-family: "Roboto", sans-serif;
+  margin-bottom: 100px;
 }
 body h2 {
-  padding: 15px;
+  padding: 20px;
 }
 
 #descripcion-ecommerce {
@@ -56,10 +57,11 @@ body h2 {
   }
   #descripcion-ecommerce {
     font-size: 16px;
-    padding: 0px 50px;
+    padding: 0px 100px;
   }
-  #carouselMarcas div div div img {
-    margin: 0 10px;
+  .section-contenedor-promociones .grilla-promociones {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
   }
 }
 @media (max-width: 480px) {
@@ -107,11 +109,28 @@ body h2 {
   border: 1px solid black;
 }
 
-#carouselMarcas {
-  margin-bottom: 40px;
+#accordionFlushExample {
+  margin: 0 200px;
 }
-#carouselMarcas div div div img {
-  margin: 0 40px;
+
+.section-contenedor-promociones {
+  margin: 0 200px;
+}
+.section-contenedor-promociones div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.section-contenedor-promociones div div {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid;
+  flex-direction: column;
+  align-items: center;
+}
+.section-contenedor-promociones div div:hover {
+  background: linear-gradient(white, rgb(255, 212, 219));
 }
 
 /*# sourceMappingURL=style.css.map */

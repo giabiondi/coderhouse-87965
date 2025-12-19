@@ -4,17 +4,15 @@
     justify-content: center;
   }
 
-
   #descripcion-ecommerce {
     font-size: 16px;
-    padding: 0px 50px;
+    padding: 0px 100px;
   }
 
-#carouselMarcas {
-    div div div img {
-        margin: 0 10px;
-    }
-}
+    .section-contenedor-promociones .grilla-promociones {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
 
 }
 
@@ -24,7 +22,7 @@
     justify-content: center;
   }
 
-    .section-contenedor-productos .grilla-productos div img {
+  .section-contenedor-productos .grilla-productos div img {
     width: 75px;
   }
 }

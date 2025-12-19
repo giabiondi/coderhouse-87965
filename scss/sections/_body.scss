@@ -5,10 +5,11 @@
 body {
     background: linear-gradient(map.get(mapa.$colores, color-secundario) 25%, map.get(mapa.$colores, color-primario) 75%);
     font-family: "Roboto", sans-serif;
+    margin-bottom: 100px;
 
     h2 {
         @extend .flex-center;
-        padding: 15px;
+        padding: 20px;
     }
 }
 

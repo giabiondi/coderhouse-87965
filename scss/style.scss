@@ -1,7 +1,8 @@
 @use "sections/header";
-@use "sections/main";
+@use "sections/body";
 @use "base/queries";
 @use "pages/products";
-@use "pages/promos";
+@use "pages/ofertas";
 @use "base/generales";
-@use "base/carrousel";
+@use "pages/ayuda";
+@use "pages/index";
